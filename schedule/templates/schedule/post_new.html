@@ -1,0 +1,12 @@
+{% extends "schedule/base.html" %}
+
+{% block content %}
+<body>
+    <h1>글 쓰는 페이지</h1>
+    <form method = "POSt">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type = "submit">저장!</button>
+    </form>
+</body>
+{% endblock %}
